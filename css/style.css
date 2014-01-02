@@ -149,6 +149,17 @@ body, #one {
    we need to make marginalisation have the full height. */
 #six .marginalisation {
 	height: 100%;
+	padding-top: 0;
+}
+
+/* call to action links */
+#six .marginalisation .under p a {
+	color: #15569B;
+	text-decoration: none;
+}
+
+#six .marginalisation .under p a:hover {
+	color: #073565;
 }
 
 #static-footer {
