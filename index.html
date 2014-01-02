@@ -5,23 +5,25 @@
 		<link href="fa/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
 		<link type="text/css" href="css/tooltipster.css" rel="stylesheet" />
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<!-- mobile meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	</head>
 	<body>
 		<div id="static-header">
 			<img src="img/logo-dark.png" class="logo" />
 			<ul id="navigation">
 				<!-- intro -->
-				<li><i class="fa fa-exclamation-circle icon one"></i></li>
+				<li class="icon-c one-c icon-m"><i class="fa fa-exclamation-circle icon one"></i></li>
 				<!-- what -->
-				<li><i class="fa fa-comments icon two"></i></li>
+				<li class="icon-c two-c"><i class="fa fa-comments icon two"></i></li>
 				<!-- why -->
-				<li><i class="fa fa-question-circle icon three"></i></li>
+				<li class="icon-c three-c"><i class="fa fa-question-circle icon three"></i></li>
 				<!-- how -->
-				<li><i class="fa fa-cogs icon four"></i></li>
+				<li class="icon-c four-c"><i class="fa fa-cogs icon four"></i></li>
 				<!-- where -->
-				<li><i class="fa fa-globe icon five"></i></li>
+				<li class="icon-c five-c"><i class="fa fa-globe icon five"></i></li>
 				<!-- when/support -->
-				<li><i class="fa fa-calendar icon six"></i></li>
+				<li class="icon-c six-c"><i class="fa fa-calendar icon six"></i></li>
 			</ul>
 		</div>
 		<div id="one" class="panel">
@@ -55,22 +57,37 @@
 				if($('#one').visible(true) == true) {
 					$('.icon').css('color','#000');
 					$('.one').css('color','#ff5500');
+					//classy mobile
+					$('.icon-c').removeClass('icon-m');
+					$('.one-c').addClass('icon-m');
 				}
 				if($('#two').visible(true) == true) {
 					$('.icon').css('color','#000');
 					$('.two').css('color','#871600');
+					//classy mobile
+					$('.icon-c').removeClass('icon-m');
+					$('.two-c').addClass('icon-m');
 				}
 				if($('#three').visible(true) == true) {
 					$('.icon').css('color','#000');
 					$('.three').css('color','#b8e000');
+					//classy mobile
+					$('.icon-c').removeClass('icon-m');
+					$('.three-c').addClass('icon-m');
 				}
 				if($('#four').visible(true) == true) {
 					$('.icon').css('color','#000');
 					$('.four').css('color','#D1573F');
+					//classy mobile
+					$('.icon-c').removeClass('icon-m');
+					$('.four-c').addClass('icon-m');
 				}
 				if($('#five').visible(true) == true) {
 					$('.icon').css('color','#000');
 					$('.five').css('color','#520D00');
+					//classy mobile
+					$('.icon-c').removeClass('icon-m');
+					$('.five-c').addClass('icon-m');
 				}
 			}
 
