@@ -10,11 +10,18 @@
 		<div id="static-header">
 			<img src="img/logo-dark.png" class="logo" />
 			<ul id="navigation">
+				<!-- intro -->
 				<li><i class="fa fa-exclamation-circle icon one"></i></li>
-				<li><i class="fa fa-location-arrow icon two"></i></li>
+				<!-- what -->
+				<li><i class="fa fa-comments icon two"></i></li>
+				<!-- why -->
 				<li><i class="fa fa-question-circle icon three"></i></li>
-				<li><i class="fa fa-clock-o icon four"></i></li>
-				<li><i class="fa fa-heart icon five"></i></li>
+				<!-- how -->
+				<li><i class="fa fa-cogs icon four"></i></li>
+				<!-- where -->
+				<li><i class="fa fa-globe icon five"></i></li>
+				<!-- when/support -->
+				<li><i class="fa fa-calendar icon six"></i></li>
 			</ul>
 		</div>
 		<div id="one" class="panel">
@@ -34,7 +41,7 @@
 		<div id="five" class="panel">
 
 		</div>
-		<!-- jQuery strictly not required for crucial stuff -->
+		<!-- jQuery strictly not required for crucial stuff, just prettiness -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.visible.min.js"></script>
 		<script>
@@ -66,6 +73,15 @@
 					$('.five').css('color','#520D00');
 				}
 			}
+
+			//handle people clicking
+			$('.one').click(function() {
+				$(document).scrollTo('#one');
+			})
+
+			$('.two').click(function() {
+				$(document).scrollTo('#two');
+			})
 
 			//performance-friendly scroll checking
 			didScroll = false;
