@@ -77,6 +77,8 @@ body {
 	width: 100%;
 	left: 50%;
 	right: 50%;
+	font-size: 60px;
+	color: #fff !important;
 }
 
 .marginalisation {
