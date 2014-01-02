@@ -115,13 +115,18 @@ body, #one {
 #one h1 {
 	font-family: 'CODE';
 	font-weight: 700;
-	font-size: 56px;
+	font-size: 96px;
 	color: #fff;
-	letter-spacing: 5px;
+	letter-spacing: 8px;
 	/* central */
 	display: table-cell; 
 	vertical-align: middle; 
-	text-align: center; 
+	text-align: left;
+	text-shadow: 2px 2px #222;
+}
+
+#one h1 .nextgen {
+	color: rgb(255, 85, 0);
 }
 
 #two {
@@ -182,10 +187,39 @@ body, #one {
 }
 
 /* mobile friendly */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
 	#one h1 {
 		font-size: 36px;
 	}
+
+	#six {
+		height: 120%;
+	}
+
+	#six .marginalisation {
+		height: 83%;
+		padding-top: 90px;
+	}
+
+	.marginalisation {
+		margin-left: 4%;
+		max-width: 92%;
+	}
+
+	.panel h2 {
+		font-size: 36px;
+		line-height: 48px;
+		text-align: left;
+	}
+
+	.panel p {
+		font-size: 24px;
+	}
+
+	.ms {
+		display: none;
+	}
+
 
 	.icon {
 		font-size: 36px;
