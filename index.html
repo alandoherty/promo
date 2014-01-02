@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Reach</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,600,700,300' rel='stylesheet' type='text/css'>
+		<link href="fa/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+		<link type="text/css" href="css/tooltipster.css" rel="stylesheet" />
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="static-header">
+			<img src="img/logo-dark.png" class="logo" />
+			<ul id="navigation">
+				<li><i class="fa fa-exclamation-circle icon one"></i></li>
+				<li><i class="fa fa-location-arrow icon two"></i></li>
+				<li><i class="fa fa-question-circle icon three"></i></li>
+				<li><i class="fa fa-clock-o icon four"></i></li>
+				<li><i class="fa fa-heart icon five"></i></li>
+			</ul>
+		</div>
+		<div id="one" class="panel">
+			<div class="marginalisation">
+				<h1>Welcome to the next generation.</h1>
+			</div>
+		</div>
+		<div id="two" class="panel">
+
+		</div>
+		<div id="three" class="panel">
+
+		</div>
+		<div id="four" class="panel">
+
+		</div>
+		<div id="five" class="panel">
+
+		</div>
+		<!-- jQuery strictly not required for crucial stuff -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.visible.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.icon').css('color','#000');
+				$('.one').css('color','#ff5500');
+			})
+
+			//make icons change colour
+			function checkYoShizzle() {
+				if($('#one').visible(true) == true) {
+					$('.icon').css('color','#000');
+					$('.one').css('color','#ff5500');
+				}
+				if($('#two').visible(true) == true) {
+					$('.icon').css('color','#000');
+					$('.two').css('color','#871600');
+				}
+				if($('#three').visible(true) == true) {
+					$('.icon').css('color','#000');
+					$('.three').css('color','#b8e000');
+				}
+				if($('#four').visible(true) == true) {
+					$('.icon').css('color','#000');
+					$('.four').css('color','#D1573F');
+				}
+				if($('#five').visible(true) == true) {
+					$('.icon').css('color','#000');
+					$('.five').css('color','#520D00');
+				}
+			}
+
+			//performance-friendly scroll checking
+			didScroll = false;
+			$(window).scroll(function() {
+				didScroll = true;
+			});
+ 
+			setInterval(function() {
+				if(didScroll) {
+				didScroll = false;
+				checkYoShizzle();
+				}
+			}, 250);
+		</script>
+	</body>
+</html>
