@@ -70,17 +70,6 @@ body, #one {
 	margin-right: 10px;
 }
 
-#static-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	left: 50%;
-	right: 50%;
-	font-size: 60px;
-	color: #fff !important;
-}
-
 .marginalisation {
 	width: 100%;
 	height: 66.6%;
@@ -160,6 +149,25 @@ body, #one {
    we need to make marginalisation have the full height. */
 #six .marginalisation {
 	height: 100%;
+}
+
+#static-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-size: 48px;
+	color: #fff !important;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#static-footer a {
+	color: #fff;
+}
+
+#static-footer a:hover {
+	color: #eee;
 }
 
 /* mobile friendly */
