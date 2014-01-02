@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div id="static-header">
-			<img src="img/logo-dark.png" class="logo" />
+			<img src="img/logo-light.png" class="logo" />
 			<ul id="navigation">
 				<!-- intro -->
 				<li class="icon-c one-c icon-m"><i class="fa fa-exclamation-circle icon one"></i></li>
@@ -28,20 +28,56 @@
 		</div>
 		<div id="one" class="panel">
 			<div class="marginalisation">
-				<h1>Welcome to the next generation.</h1>
+				<div class="under">
+					<ul id="scene">
+						<li class="layer" data-depth="1.00"><h1>Welcome to the next generation.</h1></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id="two" class="panel">
-
+			<div class="marginalisation">
+				<div class="under">
+					<h2>What is Reach?</h2>
+					<p>Reach is a messaging app built for the web. You'll be able to use Reach wherever you have an internet connection - be it on your phone, tablet, or laptop.</p>
+					<p>We're about to introduce "social messaging" - and we hope that you love it just as much as we do.</p>
+				</div>
+			</div>
 		</div>
 		<div id="three" class="panel">
-
+			<div class="marginalisation">
+				<div class="under">
+					<h2>Why Reach?</h2>
+					<p>We all love to keep in contact with one another, and yet the tools that we use to do that are very primitive. They don't account for who youre talking to, or even why - we plan to change that.</p>
+				</div>
+			</div>
 		</div>
 		<div id="four" class="panel">
-
+			<div class="marginalisation">
+				<div class="under">
+					<h2>How are we doing it?</h2>
+					<p>We're building the Reach API in Node.js, a modern I/O-centric platform that's just perfect for messaging.</p>
+					<p>Initially, first-party Reach apps will be available for the web and iOS, with Android and Windows Phone following soon after.</p>
+				</div>
+			</div>
 		</div>
 		<div id="five" class="panel">
-
+			<div class="marginalisation">
+				<div class="under">
+					<h2>Where will Reach be?</h2>
+					<p>Reach can be accessed wherever you have an internet connection and a compatible browser.</p>
+					<p>Initially, we'll be launching a web app alongside a native iOS app, with more platforms to follow.</p>
+				</div>
+			</div>
+		</div>
+		<div id="six" class="panel">
+			<div class="marginalisation">
+				<div class="under">
+					<h2>We need your help.</h2>
+					<p>Right now, we're on track to launch the first version of Reach within the first two months of 2014. We need help to promote Reach and spread the word. Tweet this link, like us on Facebook, even request some stickers.</p>
+					<p>You can also send us an email at hello@getrea.ch. We'd love to hear what you think!</p>
+				</div>
+			</div>
 		</div>
 		<div id="static-footer">
 			<a href="http://www.twitter.com/reachmsg"> <id="twit" <i class="fa fa-twitter"></i>
@@ -49,48 +85,57 @@
 		<!-- jQuery strictly not required for crucial stuff, just prettiness -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.visible.min.js"></script>
+		<script type="text/javascript" src="js/parallax.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$('.icon').css('color','#000');
+				$('.icon').css('color','#fff');
 				$('.one').css('color','#ff5500');
+				$('#scene').parallax();
 			})
 
 			//make icons change colour
 			function checkYoShizzle() {
 				if($('#one').visible(true) == true) {
-					$('.icon').css('color','#000');
+					$('.icon').css('color','#fff');
 					$('.one').css('color','#ff5500');
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.one-c').addClass('icon-m');
 				}
 				if($('#two').visible(true) == true) {
-					$('.icon').css('color','#000');
+					$('.icon').css('color','#fff');
 					$('.two').css('color','#871600');
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.two-c').addClass('icon-m');
 				}
 				if($('#three').visible(true) == true) {
-					$('.icon').css('color','#000');
-					$('.three').css('color','#b8e000');
+					$('.icon').css('color','#fff');
+					$('.three').css('color','#522218');
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.three-c').addClass('icon-m');
 				}
 				if($('#four').visible(true) == true) {
-					$('.icon').css('color','#000');
+					$('.icon').css('color','#fff');
 					$('.four').css('color','#D1573F');
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.four-c').addClass('icon-m');
 				}
 				if($('#five').visible(true) == true) {
-					$('.icon').css('color','#000');
-					$('.five').css('color','#520D00');
+					$('.icon').css('color','#fff');
+					$('.five').css('color','#D12200');
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.five-c').addClass('icon-m');
+				}
+				if($('#six').visible(true) == true) {
+					$('.icon').css('color','#fff');
+					$('.six').css('color','#b8e000');
+					//classy mobile
+					$('.icon-c').removeClass('icon-m');
+					$('.six-c').addClass('icon-m');
 				}
 			}
 
