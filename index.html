@@ -9,8 +9,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	</head>
 	<body>
+		<!-- preload some images -->
+		<div id="prl">
+			<img src="img/cl/1.png" />
+			<img src="img/cl/6.png" />
+		</div>
+		<!-- begin actual content -->
 		<div id="static-header">
-			<img src="img/logo-light.png" class="logo" />
+			<img src="img/logo-sqr.png" class="logo" />
 			<ul id="navigation">
 				<!-- intro -->
 				<li class="icon-c one-c icon-m"><i class="fa fa-exclamation-circle icon one"></i></li>
@@ -101,6 +107,8 @@
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.one-c').addClass('icon-m');
+					//change the logo
+					$('.logo').attr('src','img/cl/1.png');
 				}
 				if($('#two').visible(true) == true) {
 					$('.icon').css('color','#fff');
@@ -129,6 +137,8 @@
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.five-c').addClass('icon-m');
+					//change the logo
+					$('.logo').attr('src','img/cl/1.png');
 				}
 				if($('#six').visible(true) == true) {
 					$('.icon').css('color','#fff');
@@ -136,6 +146,8 @@
 					//classy mobile
 					$('.icon-c').removeClass('icon-m');
 					$('.six-c').addClass('icon-m');
+					//change the logo
+					$('.logo').attr('src','img/cl/6.png');
 				}
 			}
 

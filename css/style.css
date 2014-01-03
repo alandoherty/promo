@@ -34,6 +34,13 @@ body, #one {
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bcg.jpg', sizingMethod='scale')";
 }
 
+#prl {
+	display: none;
+	/* failsafe */
+	height: 0px;
+	width: 0px;
+}
+
 #static-header {
 	width: 100%;
 	height: 58px;
@@ -46,9 +53,9 @@ body, #one {
 }
 
 #static-header .logo {
-	height: 54px;
+	height: 38px;
 	position: fixed;
-	top: 2px;
+	top: 10px;
 	left: 10px;
 	z-index: 11;
 }
@@ -127,6 +134,7 @@ body, #one {
 
 #one h1 .nextgen {
 	color: rgb(255, 85, 0);
+	text-shadow: 4px 4px #A63800;
 }
 
 #two {
